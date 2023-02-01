@@ -1,6 +1,8 @@
 # ![CC: Tweaked](doc/logo.png)
 [![Current build status](https://github.com/cc-tweaked/CC-Tweaked/workflows/Build/badge.svg)](https://github.com/cc-tweaked/CC-Tweaked/actions "Current build status") [![Download CC: Tweaked on CurseForge](http://cf.way2muchnoise.eu/title/cc-tweaked.svg)][CurseForge]
 
+## Do not expect this to be stable!
+
 ## Building this mod
 
 Build CC: Tweaked with ./gradlew build. This will be very slow the first time it runs, as it needs to download a lot of dependencies (and decompile Minecraft several times). Subsequent runs should be much faster!
