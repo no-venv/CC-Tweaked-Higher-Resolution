@@ -17,7 +17,7 @@ public class ServerMonitor {
     private final MonitorBlockEntity origin;
 
     private final boolean colour;
-    private int textScale = 2;
+    private double textScale = 2;
     private @Nullable NetworkedTerminal terminal;
     private final AtomicBoolean resized = new AtomicBoolean(false);
     private final AtomicBoolean changed = new AtomicBoolean(false);
@@ -32,7 +32,7 @@ public class ServerMonitor {
         var oldWidth = oldTerm == null ? -1 : oldTerm.getWidth();
         var oldHeight = oldTerm == null ? -1 : oldTerm.getHeight();
 
-        var textScale = this.textScale * 0.5;
+        var textScale = this.textScale;
         var termWidth = (int) Math.max(
             (double) Math.round((origin.getWidth() - 2.0 * (MonitorBlockEntity.RENDER_BORDER + MonitorBlockEntity.RENDER_MARGIN)) / (textScale * 6.0 * MonitorBlockEntity.RENDER_PIXEL_SCALE)),
             1.0
@@ -60,11 +60,11 @@ public class ServerMonitor {
         if (!changed.getAndSet(true)) TickScheduler.schedule(origin.tickToken);
     }
 
-    int getTextScale() {
+    double getTextScale() {
         return textScale;
     }
 
-    synchronized void setTextScale(int textScale) {
+    synchronized void setTextScale(double textScale) {
         if (this.textScale == textScale) return;
         this.textScale = textScale;
         rebuild();
