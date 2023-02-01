@@ -59,7 +59,6 @@ include(":forge-api")
 include(":forge")
 
 include(":lints")
-include(":web")
 
 for (project in rootProject.children) {
     project.projectDir = file("projects/${project.name}")
