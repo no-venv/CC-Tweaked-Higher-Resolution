@@ -7,7 +7,7 @@ package dan200.computercraft.shared.peripheral.monitor;
 
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.lua.LuaFunction;
-import dan200.computercraft.api.lua.LuaValues;
+//import dan200.computercraft.api.lua.LuaValues;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import dan200.computercraft.api.peripheral.IPeripheral;
 import dan200.computercraft.core.apis.TermMethods;
@@ -61,9 +61,9 @@ public class MonitorPeripheral extends TermMethods implements IPeripheral {
      */
     @LuaFunction
     public final void setTextScale(double scaleArg) throws LuaException {
-        var scale = (int) (LuaValues.checkFinite(0, scaleArg) * 2.0);
-        if (scale < 1 || scale > 10) throw new LuaException("Expected number in range 0.5-5");
-        getMonitor().setTextScale(scale);
+        //var scale = (int) (LuaValues.checkFinite(0, scaleArg) * 2.0);
+        //if (scale < 1 || scale > 10) throw new LuaException("Expected number in range 0.5-5");
+        getMonitor().setTextScale(scaleArg);
     }
 
     /**
