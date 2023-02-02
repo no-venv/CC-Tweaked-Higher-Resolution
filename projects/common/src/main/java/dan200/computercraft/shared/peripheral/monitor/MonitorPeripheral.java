@@ -7,7 +7,7 @@ package dan200.computercraft.shared.peripheral.monitor;
 
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.lua.LuaFunction;
-//import dan200.computercraft.api.lua.LuaValues;
+import dan200.computercraft.api.lua.LuaValues;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import dan200.computercraft.api.peripheral.IPeripheral;
 import dan200.computercraft.core.apis.TermMethods;
