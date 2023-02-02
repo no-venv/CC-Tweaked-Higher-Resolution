@@ -5,13 +5,14 @@
 
 ## Building this mod
 
-Build CC: Tweaked with ./gradlew build. This will be very slow the first time it runs, as it needs to download a lot of dependencies (and decompile Minecraft several times). Subsequent runs should be much faster!
+Run `./gradlew assemble` 2 - 3 times
 
-You're now ready to start developing CC: Tweaked. Running ./gradlew :forge:runClient or ./gradle :fabric:runClient will start Minecraft under Forge and Fabric respectively.
-
-If you want to run CC:T in a normal Minecraft instance, run ./gradlew assemble and copy the .jar from projects/forge/build/libs (for Forge) or projects/fabric/build/libs (for Fabric).
+Copy the .jar from projects/forge/build/libs (for Forge) or projects/fabric/build/libs (for Fabric).
 
 # Description 
+
+**This mod allows you to change your monitor scales by any amount, allowing higher resolutions!
+Keep note that using lower scales may crash your game, make your world unplayable or terrible performance, be mindful**
 
 CC: Tweaked is a mod for Minecraft which adds programmable computers, turtles and more to the game. A fork of the
 much-beloved [ComputerCraft], it continues its legacy with better performance, stability, and a wealth of new features.
