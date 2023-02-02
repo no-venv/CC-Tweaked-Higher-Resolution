@@ -2,7 +2,7 @@
 [![Current build status](https://github.com/cc-tweaked/CC-Tweaked/workflows/Build/badge.svg)](https://github.com/cc-tweaked/CC-Tweaked/actions "Current build status") [![Download CC: Tweaked on CurseForge](http://cf.way2muchnoise.eu/title/cc-tweaked.svg)][CurseForge]
 
 ## Do not expect this to be stable!
-
+[Download] for forge 1.19x
 ## Building this mod
 
 Run `./gradlew assemble` 2 - 3 times
@@ -77,3 +77,4 @@ the generated documentation [can be browsed online](https://tweaked.cc/javadoc/)
 [forum]: https://forums.computercraft.cc/
 [GitHub Discussions]: https://github.com/cc-tweaked/CC-Tweaked/discussions
 [IRC]: https://webchat.esper.net/?channels=computercraft "#computercraft on EsperNet"
+[Download]: https://github.com/no-venv/CC-Tweaked-Higher-Resolution/blob/mc-1.19.x/cc-tweaked-1.19.3-forge-1.102.2.jar
